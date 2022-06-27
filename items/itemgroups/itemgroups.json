@@ -86,9 +86,9 @@
     "extend": {
       "items": [
         { "item": "PSY_magi_Kar98k_teneblae", "prob": 3, "charges-min": 0, "charges-max": 5 },
-        { "item": "PSY_magi_type38_ignis"   , "prob": 3, "charges-min": 0, "charges-max": 5 },
+        { "item": "PSY_magi_type38_ignis", "prob": 3, "charges-min": 0, "charges-max": 5 },
         { "item": "PSY_magi_M1903_electrica", "prob": 3, "charges-min": 0, "charges-max": 5 },
-        { "item": "PSY_magi_enfield_acidus" , "prob": 3, "charges-min": 0, "charges-max": 10 }
+        { "item": "PSY_magi_enfield_acidus", "prob": 3, "charges-min": 0, "charges-max": 10 }
       ]
 	}
   },
@@ -99,9 +99,9 @@
     "extend": {
       "items": [
         { "item": "PSY_magi_Kar98k_teneblae", "prob": 3, "charges-min": 0, "charges-max": 5 },
-        { "item": "PSY_magi_type38_ignis"   , "prob": 3, "charges-min": 0, "charges-max": 5 },
+        { "item": "PSY_magi_type38_ignis", "prob": 3, "charges-min": 0, "charges-max": 5 },
         { "item": "PSY_magi_M1903_electrica", "prob": 3, "charges-min": 0, "charges-max": 5 },
-        { "item": "PSY_magi_enfield_acidus" , "prob": 3, "charges-min": 0, "charges-max": 10 }
+        { "item": "PSY_magi_enfield_acidus", "prob": 3, "charges-min": 0, "charges-max": 10 }
       ]
     }
   },
@@ -176,26 +176,26 @@
     "copy-from": "demon_spider_lair_treasure",
     "extend": {
       "items": [
-        { "item": "PSY_magi_hayate_bandana_head" , "prob": 20 },
-        { "item": "PSY_magi_hayate_tshirt"       , "prob": 20 },
-        { "item": "PSY_magi_hayate_bracelet"     , "prob": 20 },
-        { "item": "PSY_magi_hayate_boots"        , "prob": 20 },
-        { "item": "PSY_magi_head_kyodan"         , "prob": 20 },
-        { "item": "PSY_magi_tshirt_kyodan"       , "prob": 20 },
-        { "item": "PSY_magi_bracelet_kyodan"     , "prob": 20 },
-        { "item": "PSY_magi_boots_kyodan"        , "prob": 20 },
-        { "item": "PSY_magi_head_sister"         , "prob": 20 },
-        { "item": "PSY_magi_tshirt_sister"       , "prob": 20 },
-        { "item": "PSY_magi_head_bouei"          , "prob": 20 },
-        { "item": "PSY_magi_tshirt_bouei"        , "prob": 20 },
-        { "item": "PSY_magi_bracelet_bouei"      , "prob": 20 },
-        { "item": "PSY_magi_boots_bouei"         , "prob": 20 },
-        { "item": "PSY_magi_head_val"            , "prob": 20 },
-        { "item": "PSY_magi_tshirt_val"          , "prob": 20 },
-        { "item": "PSY_magi_bracelet_val"        , "prob": 20 },
-        { "item": "PSY_magi_boots_val"           , "prob": 20 },
-        { "item": "PSY_magi_shield_kite_thunder" , "prob": 20 },
-        { "item": "PSY_magi_shield_kite_fleeze"  , "prob": 20 }
+        { "item": "PSY_magi_hayate_bandana_head", "prob": 10 },
+        { "item": "PSY_magi_hayate_tshirt", "prob": 10 },
+        { "item": "PSY_magi_hayate_bracelet", "prob": 10 },
+        { "item": "PSY_magi_hayate_boots", "prob": 10 },
+        { "item": "PSY_magi_head_kyodan", "prob": 10 },
+        { "item": "PSY_magi_tshirt_kyodan", "prob": 10 },
+        { "item": "PSY_magi_bracelet_kyodan", "prob": 10 },
+        { "item": "PSY_magi_boots_kyodan", "prob": 10 },
+        { "item": "PSY_magi_head_sister", "prob": 10 },
+        { "item": "PSY_magi_tshirt_sister", "prob": 10 },
+        { "item": "PSY_magi_head_bouei", "prob": 10 },
+        { "item": "PSY_magi_tshirt_bouei", "prob": 10 },
+        { "item": "PSY_magi_bracelet_bouei", "prob": 10 },
+        { "item": "PSY_magi_boots_bouei", "prob": 10 },
+        { "item": "PSY_magi_head_val", "prob": 10 },
+        { "item": "PSY_magi_tshirt_val", "prob": 10 },
+        { "item": "PSY_magi_bracelet_val", "prob": 10 },
+        { "item": "PSY_magi_boots_val", "prob": 10 },
+        { "item": "PSY_magi_shield_kite_thunder", "prob": 10 },
+        { "item": "PSY_magi_shield_kite_fleeze", "prob": 10 }
       ]
     }
   },
@@ -205,26 +205,26 @@
     "copy-from": "lair_black_dragon_treasure",
     "extend": {
       "items": [
-        { "item": "PSY_magi_hayate_bandana_head" , "prob": 20 },
-        { "item": "PSY_magi_hayate_tshirt"       , "prob": 20 },
-        { "item": "PSY_magi_hayate_bracelet"     , "prob": 20 },
-        { "item": "PSY_magi_hayate_boots"        , "prob": 20 },
-        { "item": "PSY_magi_head_kyodan"         , "prob": 20 },
-        { "item": "PSY_magi_tshirt_kyodan"       , "prob": 20 },
-        { "item": "PSY_magi_bracelet_kyodan"     , "prob": 20 },
-        { "item": "PSY_magi_boots_kyodan"        , "prob": 20 },
-        { "item": "PSY_magi_head_sister"         , "prob": 20 },
-        { "item": "PSY_magi_tshirt_sister"       , "prob": 20 },
-        { "item": "PSY_magi_head_bouei"          , "prob": 20 },
-        { "item": "PSY_magi_tshirt_bouei"        , "prob": 20 },
-        { "item": "PSY_magi_bracelet_bouei"      , "prob": 20 },
-        { "item": "PSY_magi_boots_bouei"         , "prob": 20 },
-        { "item": "PSY_magi_head_val"            , "prob": 20 },
-        { "item": "PSY_magi_tshirt_val"          , "prob": 20 },
-        { "item": "PSY_magi_bracelet_val"        , "prob": 20 },
-        { "item": "PSY_magi_boots_val"           , "prob": 20 },
-        { "item": "PSY_magi_shield_kite_thunder" , "prob": 20 },
-        { "item": "PSY_magi_shield_kite_fleeze"  , "prob": 20 }
+        { "item": "PSY_magi_hayate_bandana_head", "prob": 10 },
+        { "item": "PSY_magi_hayate_tshirt", "prob": 10 },
+        { "item": "PSY_magi_hayate_bracelet", "prob": 10 },
+        { "item": "PSY_magi_hayate_boots", "prob": 10 },
+        { "item": "PSY_magi_head_kyodan", "prob": 10 },
+        { "item": "PSY_magi_tshirt_kyodan", "prob": 10 },
+        { "item": "PSY_magi_bracelet_kyodan", "prob": 10 },
+        { "item": "PSY_magi_boots_kyodan", "prob": 10 },
+        { "item": "PSY_magi_head_sister", "prob": 10 },
+        { "item": "PSY_magi_tshirt_sister", "prob": 10 },
+        { "item": "PSY_magi_head_bouei", "prob": 10 },
+        { "item": "PSY_magi_tshirt_bouei", "prob": 10 },
+        { "item": "PSY_magi_bracelet_bouei", "prob": 10 },
+        { "item": "PSY_magi_boots_bouei", "prob": 10 },
+        { "item": "PSY_magi_head_val", "prob": 10 },
+        { "item": "PSY_magi_tshirt_val", "prob": 10 },
+        { "item": "PSY_magi_bracelet_val", "prob": 10 },
+        { "item": "PSY_magi_boots_val", "prob": 10 },
+        { "item": "PSY_magi_shield_kite_thunder", "prob": 10 },
+        { "item": "PSY_magi_shield_kite_fleeze", "prob": 10 }
       ]
     }
   },
@@ -234,26 +234,26 @@
     "copy-from": "magic_shop_clothes",
     "extend": {
       "items": [
-        { "item": "PSY_magi_hayate_bandana_head" , "prob": 5 },
-        { "item": "PSY_magi_hayate_tshirt"       , "prob": 5 },
-        { "item": "PSY_magi_hayate_bracelet"     , "prob": 5 },
-        { "item": "PSY_magi_hayate_boots"        , "prob": 5 },
-        { "item": "PSY_magi_head_kyodan"         , "prob": 5 },
-        { "item": "PSY_magi_tshirt_kyodan"       , "prob": 5 },
-        { "item": "PSY_magi_bracelet_kyodan"     , "prob": 5 },
-        { "item": "PSY_magi_boots_kyodan"        , "prob": 5 },
-        { "item": "PSY_magi_head_sister"         , "prob": 5 },
-        { "item": "PSY_magi_tshirt_sister"       , "prob": 5 },
-        { "item": "PSY_magi_head_bouei"          , "prob": 5 },
-        { "item": "PSY_magi_tshirt_bouei"        , "prob": 5 },
-        { "item": "PSY_magi_bracelet_bouei"      , "prob": 5 },
-        { "item": "PSY_magi_boots_bouei"         , "prob": 5 },
-        { "item": "PSY_magi_head_val"            , "prob": 5 },
-        { "item": "PSY_magi_tshirt_val"          , "prob": 5 },
-        { "item": "PSY_magi_bracelet_val"        , "prob": 5 },
-        { "item": "PSY_magi_boots_val"           , "prob": 5 },
-        { "item": "PSY_magi_shield_kite_thunder" , "prob": 5 },
-        { "item": "PSY_magi_shield_kite_fleeze"  , "prob": 5 }
+        { "item": "PSY_magi_hayate_bandana_head", "prob": 5 },
+        { "item": "PSY_magi_hayate_tshirt", "prob": 5 },
+        { "item": "PSY_magi_hayate_bracelet", "prob": 5 },
+        { "item": "PSY_magi_hayate_boots", "prob": 5 },
+        { "item": "PSY_magi_head_kyodan", "prob": 5 },
+        { "item": "PSY_magi_tshirt_kyodan", "prob": 5 },
+        { "item": "PSY_magi_bracelet_kyodan", "prob": 5 },
+        { "item": "PSY_magi_boots_kyodan", "prob": 5 },
+        { "item": "PSY_magi_head_sister", "prob": 5 },
+        { "item": "PSY_magi_tshirt_sister", "prob": 5 },
+        { "item": "PSY_magi_head_bouei", "prob": 5 },
+        { "item": "PSY_magi_tshirt_bouei", "prob": 5 },
+        { "item": "PSY_magi_bracelet_bouei", "prob": 5 },
+        { "item": "PSY_magi_boots_bouei", "prob": 5 },
+        { "item": "PSY_magi_head_val", "prob": 5 },
+        { "item": "PSY_magi_tshirt_val", "prob": 5 },
+        { "item": "PSY_magi_bracelet_val", "prob": 5 },
+        { "item": "PSY_magi_boots_val", "prob": 5 },
+        { "item": "PSY_magi_shield_kite_thunder", "prob": 5 },
+        { "item": "PSY_magi_shield_kite_fleeze", "prob": 5 }
       ]
     }
   },
