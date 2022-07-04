@@ -71,6 +71,66 @@
   },
   {
     "type": "recipe",
+    "result": "PSY_magi_head_bouei_xl",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_bouei", 1 ] ],
+       [ [ "mana_dust", 30 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_head_bouei_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_bouei", 1 ] ],
+       [ [ "mana_dust", 30 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_head_bouei",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_bouei_xl", 1 ] ],
+       [ [ "mana_dust", 30 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_head_bouei",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_bouei_xs", 1 ] ],
+       [ [ "mana_dust", 30 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
     "result": "PSY_magi_head_bouei",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",

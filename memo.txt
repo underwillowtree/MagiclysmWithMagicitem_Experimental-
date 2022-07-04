@@ -1,8 +1,70 @@
 変更点メモ
 
+○一部のアイテムグループの調整
 気になった点
-・デーモンスパイダーの巣、ドラゴンの巣の報酬アイテムがMagiclysmWithMagicitemのアイテムばかりになってしまう
+  ・デーモンスパイダーの巣、ドラゴンの巣の報酬アイテムがMagiclysmWithMagicitemのアイテムばかりになってしまう
 変更内容
-・MagiclysmWithMagicitemのアイテムの出現率が高すぎた（20）ため、Magiclysm側の装備アイテムなどと同じ(10)に調整
-・インデントを調整
+  ・MagiclysmWithMagicitemのアイテムの出現率が高すぎたため、Magiclysm側の装備アイテムなどと同じ値に調整
+    MagiclysmWithMagicitem_Experimental\items\itemgroups\itemgroups.json
+      probを変更 20→10
+      インデントを調整
+
+
+○防衛者シリーズの調整
+気になった点
+  ・jsonの記述式が古い
+  ・一部の装備の性能が高すぎる
+変更内容
+  ・防衛者の兜
+    防御力をhelm_palate（グレートヘルム）より下になるように調整
+      防御力は調整前より下がった、耐性は調整前より上がった
+    warmthを10→20に戻した
+	"encumbrance"を変更 "head"30→20 "eyes", "mouth"20→10
+    flag:HELMET_COMPATを削除
+      この装備とは別にヘルメットを装備可能フラグ
+    flag:ONLY_ONEを追加
+      同じ装備は１つしか装備できないフラグ
+	"armor"の記述をlc_helm_closeをベースにしたものに変更
+  ・防衛者の兜(バイザー開放)
+    メンテナンスがしやすいようにcopy-fromを使った記述に変更
+    "looks_like"を追加 "helmet_barbute"
+  ・防衛者の鎧
+    防御力をarmor_lc_plate:プレートアーマー(低炭素鋼)より上になるように調整
+    weightを変更 "10 kg"→"20 kg"
+    volumeを変更 "30 L"→"17500 ml"
+    flag:ONLY_ONEを追加
+      同じ装備は１つしか装備できないフラグ
+    flag:BLOCK_WHILE_WORNを追加
+      装備している時に防具が攻撃をブロックすることがあるフラグ
+    armorの記述をarmor_lc_plateをベースにしたものに変更
+  ・防衛者の籠手
+    防御力をlc_mitten_gaunt:ミトンガントレット(低炭素鋼)より下になるように調整
+      防御力・耐性は調整前より上がった
+    "weight"を変更 "880 g"→"1250 g"
+    "volume"を変更 "1500 ml"→"1250 ml"
+    "material"を変更 "iron"→"steel"
+    flag:DURABLE_MELEEを追加
+    flag:OUTERを追加
+    "armor"の記述をlc_mitten_gauntをベースにしたものに変更
+ 　・防衛者のグリーブ
+    防御力をboots_plate:プレートアーマーブーツより下になるように調整
+      防御力・耐性は調整前より上がった
+    "name"を変更 "防衛者のグリーブ"→"防衛者のブーツ"
+    "description"を変更 "防衛者のグリーブ"→"防衛者のブーツ"
+    "volume"を変更 "2250 ml"→"3250 ml"
+    "material"を変更 "iron"→"steel"
+    "encumbrance"を変更 28→18
+    "armor"の記述をboots_plateをベースにしたものに変更
+
+
+○VARSIZEフラグの問題
+気になった点
+  ・VARSIZEフラグの仕様の見落とし
+    設定したencumbrance(動作阻害)の値が「不適」の時の値として扱われるため、仕立て直しを行うと想定よりはるかに少ない値になってしまう
+変更内容
+  ・encumbranceの影響が大きく、かつVARSIZEフラグのある装備についてXL、XSを新規に作成
+    対象は防衛者シリーズとヴァルキリーシリーズ
+    製作画面からXL・通常・XSを変更できるようにする
+    XL⇔通常⇔XS
+
 

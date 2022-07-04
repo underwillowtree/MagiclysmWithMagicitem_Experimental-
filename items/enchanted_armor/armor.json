@@ -349,16 +349,35 @@
     "looks_like": "helmet_barbute",
     "color": "light_gray",
     "armor": [
-      { "covers": [ "head" ], "coverage": 100, "encumbrance": 30 },
-      { "covers": [ "mouth" ], "coverage": 100, "encumbrance": 20, "rigid_layer_only": true },
-      { "covers": [ "eyes" ], "coverage": 100, "encumbrance": 20, "rigid_layer_only": true }
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 90, "thickness": 1.6 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "head" ],
+        "coverage": 100,
+        "encumbrance": 20
+      },
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 80, "thickness": 1.6 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "eyes", "mouth" ],
+        "coverage": 100,
+        "encumbrance": 10,
+        "layers": [ "OUTER" ],
+        "rigid_layer_only": true
+      }
     ],
     "use_action": { "type": "transform", "msg": "兜のバイザーを開けました。", "target": "PSY_magi_head_bouei_raised", "menu_text": "バイザーを開ける" },
-    "warmth": 10,
+    "warmth": 20,
     "material_thickness": 6,
     "environmental_protection": 3,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "STURDY", "HELMET_COMPAT", "PADDED" ],
+    "flags": [ "STURDY", "ONLY_ONE", "PADDED" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -376,43 +395,73 @@
   },
   {
     "id": "PSY_magi_head_bouei_raised",
+    "copy-from": "PSY_magi_head_bouei",
+    "looks_like": "helmet_barbute",
     "repairs_like": "helmet_plate",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "防衛者の兜(バイザー開放)" },
     "description": "防衛者と呼ばれる集団が装備する兜です。装備することで多少の保護が得られます。バイザーは開いた状態です。",
-    "weight": "2175 g",
-    "volume": "2750 ml",
-    "price": 40000,
-    "price_postapoc": 5000,
-    "bashing": 10,
-    "material": [ "steel", "leather" ],
-    "symbol": "[",
-    "looks_like": "helmet_barbute",
-    "color": "light_gray",
     "armor": [
-      { "covers": [ "head" ], "coverage": 100, "encumbrance": 30 }
-    ],
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 90, "thickness": 1.6 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "head" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+	],
     "use_action": { "type": "transform", "msg": "兜のバイザーを閉じました。", "target": "PSY_magi_head_bouei", "menu_text": "バイザーを閉じる" },
-    "warmth": 10,
-    "material_thickness": 6,
-    "environmental_protection": 3,
-    "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "STURDY", "HELMET_COMPAT", "PADDED" ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "ARMOR_CUT", "add": -5 },
-            { "value": "ARMOR_BASH", "add": -5 },
-            { "value": "ARMOR_STAB", "add": -5 },
-            { "value": "ARMOR_BULLET", "add": -5 }
-          ]
-        }
-      ]
-    }  
+    "warmth": 15
+  },
+  {
+    "id": "PSY_magi_head_bouei_xl",
+    "copy-from": "PSY_magi_head_bouei",
+    "repairs_like": "helmet_plate",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "XL 防衛者の兜" },
+    "use_action": { "type": "transform", "msg": "兜のバイザーを開けました。", "target": "PSY_magi_head_bouei_xl_raised", "menu_text": "バイザーを開ける" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_head_bouei_xl_raised",
+    "copy-from": "PSY_magi_head_bouei_raised",
+    "looks_like": "helmet_barbute",
+    "repairs_like": "helmet_plate",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "XL 防衛者の兜(バイザー開放)" },
+    "use_action": { "type": "transform", "msg": "兜のバイザーを閉じました。", "target": "PSY_magi_head_bouei_xl", "menu_text": "バイザーを閉じる" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_head_bouei_xs",
+    "copy-from": "PSY_magi_head_bouei",
+    "repairs_like": "helmet_plate",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "XS 防衛者の兜" },
+    "use_action": { "type": "transform", "msg": "兜のバイザーを開けました。", "target": "PSY_magi_head_bouei_xs_raised", "menu_text": "バイザーを開ける" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_head_bouei_xs_raised",
+    "copy-from": "PSY_magi_head_bouei_raised",
+    "looks_like": "helmet_barbute",
+    "repairs_like": "helmet_plate",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "XS 防衛者の兜(バイザー開放)" },
+    "use_action": { "type": "transform", "msg": "兜のバイザーを閉じました。", "target": "PSY_magi_head_bouei_xs", "menu_text": "バイザーを閉じる" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
     "id": "PSY_magi_tshirt_bouei",
@@ -421,8 +470,8 @@
     "category": "armor",
     "name": { "str": "防衛者の鎧" },
     "description": "防衛者と呼ばれる集団が装備する鎧です。装備することで多少の保護が得られます",
-    "weight": "10 kg",
-    "volume": "30 L",
+    "weight": "20 kg",
+    "volume": "17500 ml",
     "price": 780000,
     "price_postapoc": 6000,
     "to_hit": -5,
@@ -434,8 +483,40 @@
     "warmth": 20,
     "material_thickness": 6,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "OUTER", "STURDY" ],
-    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ] } ],
+    "longest_side": "60 cm",
+    "flags": [ "OUTER", "STURDY", "ONLY_ONE", "BLOCK_WHILE_WORN" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 95, "thickness": 2.8 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
+        ],
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "encumbrance": 20
+      },
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 95, "thickness": 0.55 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 15
+      },
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 95, "thickness": 0.55 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 15
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -450,6 +531,26 @@
         }
       ]
     }  
+  },
+  {
+    "id": "PSY_magi_tshirt_bouei_xl",
+    "copy-from": "PSY_magi_tshirt_bouei",
+    "repairs_like": "armor_lc_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XL 防衛者の鎧" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_tshirt_bouei_xs",
+    "copy-from": "PSY_magi_tshirt_bouei",
+    "repairs_like": "armor_lc_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS 防衛者の鎧" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
     "id": "PSY_magi_bracelet_bouei",
@@ -458,21 +559,120 @@
     "category": "armor",
     "name": { "str": "防衛者の籠手" },
     "description": "防衛者と呼ばれる集団が装備する籠手です。装備することで多少の保護が得られます",
-    "weight": "880 g",
-    "volume": "1500 ml",
+    "weight": "1250 g",
+    "volume": "1250 ml",
     "price": 40000,
     "price_postapoc": 3000,
     "to_hit": -2,
     "bashing": 7,
-    "material": [ "iron", "leather" ],
+    "material": [ "steel", "leather" ],
     "symbol": "[",
     "looks_like": "fire_gauntlets",
     "color": "light_gray",
     "warmth": 20,
     "material_thickness": 4,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "STURDY" ],
-    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ],
+    "flags": [ "STURDY", "DURABLE_MELEE", "OUTER" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "steel", "covered_by_mat": 95, "thickness": 1.0 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_CUT", "add": -5 },
+            { "value": "ARMOR_BASH", "add": -5 },
+            { "value": "ARMOR_STAB", "add": -5 },
+            { "value": "ARMOR_BULLET", "add": -5 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "PSY_magi_bracelet_bouei_xl",
+    "copy-from": "PSY_magi_bracelet_bouei",
+    "repairs_like": "gloves_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XL 防衛者の籠手" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_bracelet_bouei_xs",
+    "copy-from": "PSY_magi_bracelet_bouei",
+    "repairs_like": "gloves_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS 防衛者の籠手" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_boots_bouei",
+    "repairs_like": "boots_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "防衛者のブーツ", "str_pl": "防衛者のブーツ" },
+    "description": "防衛者と呼ばれる集団が装備するブーツです。装備することで多少の保護が得られます",
+    "weight": "1890 g",
+    "volume": "3250 ml",
+    "price": 50000,
+    "price_postapoc": 6000,
+    "to_hit": -2,
+    "bashing": 7,
+    "material": [ "steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "boots_steel",
+    "color": "light_gray",
+    "warmth": 20,
+    "material_thickness": 4,
+    "environmental_protection": 3,
+    "flags": [ "WATERPROOF", "STURDY" ],
+    "armor": [
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_toes_r",
+          "foot_toes_l",
+          "foot_heel_r",
+          "foot_heel_l",
+          "foot_arch_r",
+          "foot_arch_l",
+          "foot_sole_r",
+          "foot_sole_l"
+        ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 90, "thickness": 1.1 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "encumbrance": 18,
+        "coverage": 100
+      },
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_ankle_r", "foot_ankle_l" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 60, "thickness": 1.1 },
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -489,41 +689,24 @@
     }  
   },
   {
-    "id": "PSY_magi_boots_bouei",
+    "id": "PSY_magi_boots_bouei_xl",
+    "copy-from": "PSY_magi_boots_bouei",
     "repairs_like": "boots_plate",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "防衛者のグリーブ", "str_pl": "防衛者のグリーブ" },
-    "description": "防衛者と呼ばれる集団が装備するグリーブです。装備することで多少の保護が得られます",
-    "weight": "1890 g",
-    "volume": "2250 ml",
-    "price": 50000,
-    "price_postapoc": 6000,
-    "to_hit": -2,
-    "bashing": 7,
-    "material": [ "iron", "leather" ],
-    "symbol": "[",
-    "looks_like": "boots_steel",
-    "color": "light_gray",
-    "warmth": 20,
-    "material_thickness": 4,
-    "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": 28, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "ARMOR_CUT", "add": -5 },
-            { "value": "ARMOR_BASH", "add": -5 },
-            { "value": "ARMOR_STAB", "add": -5 },
-            { "value": "ARMOR_BULLET", "add": -5 }
-          ]
-        }
-      ]
-    }  
+    "name": { "str": "XL 防衛者のブーツ", "str_pl": "XL 防衛者のブーツ" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_boots_bouei_xs",
+    "copy-from": "PSY_magi_boots_bouei",
+    "repairs_like": "boots_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS 防衛者のブーツ", "str_pl": "XS 防衛者のブーツ" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
     "id": "PSY_magi_head_val",
