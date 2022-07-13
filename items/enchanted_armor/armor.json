@@ -350,22 +350,22 @@
     "color": "light_gray",
     "armor": [
       {
+        "covers": [ "head" ],
         "material": [
           { "type": "steel", "covered_by_mat": 90, "thickness": 1.6 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
         ],
-        "covers": [ "head" ],
         "coverage": 100,
         "encumbrance": 20
       },
       {
+        "covers": [ "eyes", "mouth" ],
         "material": [
           { "type": "steel", "covered_by_mat": 80, "thickness": 1.6 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
         ],
-        "covers": [ "eyes", "mouth" ],
         "coverage": 100,
         "encumbrance": 10,
         "layers": [ "OUTER" ],
@@ -391,7 +391,7 @@
           ]
         }
       ]
-    }  
+    }
   },
   {
     "id": "PSY_magi_head_bouei_raised",
@@ -404,12 +404,12 @@
     "description": "防衛者と呼ばれる集団が装備する兜です。装備することで多少の保護が得られます。バイザーは開いた状態です。",
     "armor": [
       {
+        "covers": [ "head" ],
         "material": [
           { "type": "steel", "covered_by_mat": 90, "thickness": 1.6 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
         ],
-        "covers": [ "head" ],
         "coverage": 100,
         "encumbrance": 20
       }
@@ -487,32 +487,32 @@
     "flags": [ "OUTER", "STURDY", "ONLY_ONE", "BLOCK_WHILE_WORN" ],
     "armor": [
       {
+        "covers": [ "torso" ],
         "material": [
           { "type": "steel", "covered_by_mat": 95, "thickness": 2.8 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
         ],
-        "covers": [ "torso" ],
         "coverage": 100,
         "encumbrance": 20
       },
       {
+        "covers": [ "arm_l", "arm_r" ],
         "material": [
           { "type": "steel", "covered_by_mat": 95, "thickness": 0.55 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
         ],
-        "covers": [ "arm_l", "arm_r" ],
         "coverage": 100,
         "encumbrance": 15
       },
       {
+        "covers": [ "leg_l", "leg_r" ],
         "material": [
           { "type": "steel", "covered_by_mat": 95, "thickness": 0.55 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
         ],
-        "covers": [ "leg_l", "leg_r" ],
         "coverage": 100,
         "encumbrance": 15
       }
@@ -530,7 +530,7 @@
           ]
         }
       ]
-    }  
+    }
   },
   {
     "id": "PSY_magi_tshirt_bouei_xl",
@@ -575,12 +575,12 @@
     "flags": [ "STURDY", "DURABLE_MELEE", "OUTER" ],
     "armor": [
       {
+        "covers": [ "hand_l", "hand_r" ],
         "material": [
           { "type": "steel", "covered_by_mat": 95, "thickness": 1.0 },
           { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
         ],
-        "covers": [ "hand_l", "hand_r" ],
         "coverage": 100,
         "encumbrance": 20
       }
@@ -686,7 +686,7 @@
           ]
         }
       ]
-    }  
+    }
   },
   {
     "id": "PSY_magi_boots_bouei_xl",
@@ -715,8 +715,8 @@
     "category": "armor",
     "name": { "str": "ヴァルキリーの兜" },
     "description": "ヴァルキリーと呼ばれる集団が装備する兜です。装備することで多少の保護が得られます",
-    "weight": "2175 g",
-    "volume": "2750 ml",
+    "weight": "1305 g",
+    "volume": "1550 ml",
     "price": 40000,
     "price_postapoc": 5000,
     "bashing": 10,
@@ -724,14 +724,24 @@
     "symbol": "[",
     "looks_like": "helmet_barbute",
     "color": "light_gray",
-    "material_thickness": 6,
     "environmental_protection": 3,
-    "warmth": 10,
+    "warmth": 8,
     "armor": [
-      { "covers": [ "head" ], "coverage": 40, "encumbrance": 10 }
+      {
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead", "head_crown", "head_ear_r", "head_ear_l" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 95, "thickness": 1.4 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+        "encumbrance": 10,
+		"breathability": "GOOD"
+      }
     ],
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "STURDY", "HELMET_COMPAT", "PADDED" ],
+    "flags": [ "STURDY", "ONLY_ONE", "PADDED" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -745,7 +755,27 @@
           ]
         }
       ]
-    }  
+    }
+  },
+  {
+    "id": "PSY_magi_head_val_xl",
+    "copy-from": "PSY_magi_head_val",
+    "repairs_like": "helmet_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XL ヴァルキリーの兜" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_head_val_xs",
+    "copy-from": "PSY_magi_head_val",
+    "repairs_like": "helmet_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS ヴァルキリーの兜" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
     "id": "PSY_magi_tshirt_val",
@@ -754,8 +784,8 @@
     "category": "armor",
     "name": { "str": "ヴァルキリーの鎧" },
     "description": "ヴァルキリーと呼ばれる集団が装備する鎧です。装備することで多少の保護が得られます",
-    "weight": "10 kg",
-    "volume": "30 L",
+    "weight": "12 kg",
+    "volume": "15500 ml",
     "price": 780000,
     "price_postapoc": 6000,
     "to_hit": -5,
@@ -764,11 +794,45 @@
     "symbol": "[",
     "looks_like": "armor_lightplate",
     "color": "light_gray",
-    "warmth": 20,
-    "material_thickness": 6,
+    "warmth": 5,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "OUTER", "STURDY" ],
-    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ] } ],
+    "longest_side": "60 cm",
+    "flags": [ "OUTER", "STURDY", "ONLY_ONE", "BLOCK_WHILE_WORN" ],
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 90, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+		"breathability": "GOOD",
+        "encumbrance": 15
+      },
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 85, "thickness": 0.75 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+		"breathability": "GOOD",
+        "encumbrance": 10
+      },
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 85, "thickness": 0.75 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+		"breathability": "GOOD",
+        "encumbrance": 10
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -782,7 +846,27 @@
           ]
         }
       ]
-    }  
+    }
+  },
+  {
+    "id": "PSY_magi_tshirt_val_xl",
+    "copy-from": "PSY_magi_tshirt_val",
+    "repairs_like": "armor_lc_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XL ヴァルキリーの鎧" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_tshirt_val_xs",
+    "copy-from": "PSY_magi_tshirt_val",
+    "repairs_like": "armor_lc_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS ヴァルキリーの鎧" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
     "id": "PSY_magi_bracelet_val",
@@ -791,21 +875,32 @@
     "category": "armor",
     "name": { "str": "ヴァルキリーの籠手" },
     "description": "ヴァルキリーと呼ばれる集団が装備する籠手です。装備することで多少の保護が得られます",
-    "weight": "880 g",
-    "volume": "1500 ml",
+    "weight": "1050 g",
+    "volume": "1050 ml",
     "price": 40000,
     "price_postapoc": 3000,
     "to_hit": -2,
     "bashing": 7,
-    "material": [ "iron", "leather" ],
+    "material": [ "steel", "leather" ],
     "symbol": "[",
     "looks_like": "fire_gauntlets",
     "color": "light_gray",
-    "warmth": 20,
-    "material_thickness": 4,
+    "warmth": 5,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "STURDY" ],
-    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ],
+    "flags": [ "STURDY", "DURABLE_MELEE", "OUTER" ],
+    "armor": [
+      {
+        "covers": [ "hand_l", "hand_r" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 95, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+		"breathability": "GOOD",
+        "encumbrance": 10
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -819,7 +914,27 @@
           ]
         }
       ]
-    }  
+    }
+  },
+  {
+    "id": "PSY_magi_bracelet_val_xl",
+    "copy-from": "PSY_magi_bracelet_val",
+    "repairs_like": "gloves_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XL ヴァルキリーの籠手" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_bracelet_val_xs",
+    "copy-from": "PSY_magi_bracelet_val",
+    "repairs_like": "gloves_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS ヴァルキリーの籠手" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
     "id": "PSY_magi_boots_val",
@@ -828,21 +943,53 @@
     "category": "armor",
     "name": { "str": "ヴァルキリーの靴", "str_pl": "ヴァルキリーの靴" },
     "description": "ヴァルキリーと呼ばれる集団が装備する靴です。装備することで多少の保護が得られます",
-    "weight": "1890 g",
-    "volume": "2250 ml",
+    "weight": "1512 g",
+    "volume": "3250 ml",
     "price": 50000,
     "price_postapoc": 6000,
     "to_hit": -2,
     "bashing": 7,
-    "material": [ "iron", "leather" ],
+    "material": [ "steel", "leather" ],
     "symbol": "[",
     "looks_like": "boots_steel",
     "color": "light_gray",
-    "warmth": 20,
-    "material_thickness": 4,
+    "warmth": 5,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": 28, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ],
+    "flags": [ "WATERPROOF", "STURDY" ],
+    "armor": [
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_toes_r",
+          "foot_toes_l",
+          "foot_heel_r",
+          "foot_heel_l",
+          "foot_arch_r",
+          "foot_arch_l",
+          "foot_sole_r",
+          "foot_sole_l"
+        ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 90, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+        "breathability": "GOOD",
+        "encumbrance": 10
+      },
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_ankle_r", "foot_ankle_l" ],
+        "material": [
+          { "type": "steel", "covered_by_mat": 60, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "coverage": 100,
+        "breathability": "GOOD"
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -856,7 +1003,26 @@
           ]
         }
       ]
-    }  
+    }
+  },
+  {
+    "id": "PSY_magi_boots_val_xl",
+    "copy-from": "PSY_magi_boots_val",
+    "repairs_like": "boots_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XL ヴァルキリーの靴", "str_pl": "XL ヴァルキリーの靴" },
+    "proportional": { "weight": 1.2, "volume": 1.2 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "PSY_magi_boots_val_xs",
+    "copy-from": "PSY_magi_boots_val",
+    "repairs_like": "boots_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "XS ヴァルキリーの靴", "str_pl": "XS ヴァルキリーの靴" },
+    "proportional": { "weight": 0.8, "volume": 0.8 },
+    "extend": { "flags": [ "UNDERSIZE" ] }
   }
-
 ]

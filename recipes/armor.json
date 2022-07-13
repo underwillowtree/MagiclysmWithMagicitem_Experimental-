@@ -81,7 +81,7 @@
     "autolearn": true,
     "components": [
        [ [ "PSY_magi_head_bouei", 1 ] ],
-       [ [ "mana_dust", 30 ] ]
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
@@ -96,7 +96,7 @@
     "autolearn": true,
     "components": [
        [ [ "PSY_magi_head_bouei", 1 ] ],
-       [ [ "mana_dust", 30 ] ]
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
@@ -110,13 +110,13 @@
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_head_bouei_xl", 1 ] ],
-       [ [ "mana_dust", 30 ] ]
+       [ [ "PSY_magi_head_bouei_xl", 1 ], [ "PSY_magi_head_bouei_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
     "type": "recipe",
-    "result": "PSY_magi_head_bouei",
+    "result": "PSY_magi_tshirt_bouei_xl",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
     "skill_used": "spellcraft",
@@ -125,36 +125,23 @@
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_head_bouei_xs", 1 ] ],
-       [ [ "mana_dust", 30 ] ]
+       [ [ "PSY_magi_tshirt_bouei", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
     "type": "recipe",
-    "result": "PSY_magi_head_bouei",
+    "result": "PSY_magi_tshirt_bouei_xs",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_head_val",  1 ] ]
-     ]
-  },
-  {
-    "type": "recipe",
-    "result": "PSY_magi_head_val",
-    "category": "CC_PSY_MWMI",
-    "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
-    "difficulty": 0,
-    "time": "1 m",
-    "autolearn": true,
-    "components": [
-       [ [ "PSY_magi_head_bouei",  1 ] ]
+       [ [ "PSY_magi_tshirt_bouei", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
@@ -162,27 +149,44 @@
     "result": "PSY_magi_tshirt_bouei",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_tshirt_val",  1 ] ]
+       [ [ "PSY_magi_tshirt_bouei_xl", 1 ], [ "PSY_magi_tshirt_bouei_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
     "type": "recipe",
-    "result": "PSY_magi_tshirt_val",
+    "result": "PSY_magi_bracelet_bouei_xl",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_tshirt_bouei",  1 ] ]
+       [ [ "PSY_magi_bracelet_bouei", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_bracelet_bouei_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_bracelet_bouei", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
@@ -190,27 +194,44 @@
     "result": "PSY_magi_bracelet_bouei",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_bracelet_val",  1 ] ]
+       [ [ "PSY_magi_bracelet_bouei_xl", 1 ], [ "PSY_magi_bracelet_bouei_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
     "type": "recipe",
-    "result": "PSY_magi_bracelet_val",
+    "result": "PSY_magi_boots_bouei_xl",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_bracelet_bouei",  1 ] ]
+       [ [ "PSY_magi_boots_bouei", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_boots_bouei_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_boots_bouei", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
@@ -218,13 +239,179 @@
     "result": "PSY_magi_boots_bouei",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_boots_val",  1 ] ]
+       [ [ "PSY_magi_boots_bouei_xl", 1 ], [ "PSY_magi_boots_bouei_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_head_val_xl",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_head_val_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_head_val",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_head_val_xl", 1 ], [ "PSY_magi_head_val_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_tshirt_val_xl",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_tshirt_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_tshirt_val_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_tshirt_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_tshirt_val",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_tshirt_val_xl", 1 ], [ "PSY_magi_tshirt_val_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_bracelet_val_xl",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_bracelet_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_bracelet_val_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_bracelet_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_bracelet_val",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_bracelet_val_xl", 1 ], [ "PSY_magi_bracelet_val_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_boots_val_xl",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_boots_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
+     ]
+  },
+  {
+    "type": "recipe",
+    "result": "PSY_magi_boots_val_xs",
+    "category": "CC_PSY_MWMI",
+    "subcategory": "CSC_PSY_MWMI_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+       [ [ "PSY_magi_boots_val", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   },
   {
@@ -232,13 +419,14 @@
     "result": "PSY_magi_boots_val",
     "category": "CC_PSY_MWMI",
     "subcategory": "CSC_PSY_MWMI_OTHER",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 1 ],
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 2 ],
     "difficulty": 0,
     "time": "1 m",
     "autolearn": true,
     "components": [
-       [ [ "PSY_magi_boots_bouei",  1 ] ]
+       [ [ "PSY_magi_boots_val_xl", 1 ], [ "PSY_magi_boots_val_xs", 1 ] ],
+       [ [ "crystallized_mana", 5 ] ]
      ]
   }
 ]

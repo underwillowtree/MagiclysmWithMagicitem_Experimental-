@@ -20,9 +20,9 @@
       防御力は調整前より下がった、耐性は調整前より上がった
     warmthを10→20に戻した
 	"encumbrance"を変更 "head"30→20 "eyes", "mouth"20→10
-    flag:HELMET_COMPATを削除
+    削除 flag:HELMET_COMPAT
       この装備とは別にヘルメットを装備可能フラグ
-    flag:ONLY_ONEを追加
+    追加 flag:ONLY_ONE
       同じ装備は１つしか装備できないフラグ
 	"armor"の記述をlc_helm_closeをベースにしたものに変更
   ・防衛者の兜(バイザー開放)
@@ -32,9 +32,9 @@
     防御力をarmor_lc_plate:プレートアーマー(低炭素鋼)より上になるように調整
     weightを変更 "10 kg"→"20 kg"
     volumeを変更 "30 L"→"17500 ml"
-    flag:ONLY_ONEを追加
+    追加 flag:ONLY_ONE
       同じ装備は１つしか装備できないフラグ
-    flag:BLOCK_WHILE_WORNを追加
+    追加 flag:BLOCK_WHILE_WORN
       装備している時に防具が攻撃をブロックすることがあるフラグ
     armorの記述をarmor_lc_plateをベースにしたものに変更
   ・防衛者の籠手
@@ -43,8 +43,8 @@
     "weight"を変更 "880 g"→"1250 g"
     "volume"を変更 "1500 ml"→"1250 ml"
     "material"を変更 "iron"→"steel"
-    flag:DURABLE_MELEEを追加
-    flag:OUTERを追加
+    追加 flag:DURABLE_MELEE
+    追加 flag:OUTER
     "armor"の記述をlc_mitten_gauntをベースにしたものに変更
  　・防衛者のグリーブ
     防御力をboots_plate:プレートアーマーブーツより下になるように調整
@@ -68,3 +68,47 @@
     XL⇔通常⇔XS
 
 
+○ヴァルキリーシリーズの調整
+気になった点
+  ・jsonの記述式が古い
+  ・防具1式をただの防衛者のコピーのままにしておくのはもったいない
+変更内容
+  ・防具の方向性を変える
+   防衛者シリーズと比べて、夏に適した防具として再設定する
+    防御力の配分変更: Magiclysmのparabolan_wool(パラボラウール)を使用して打に弱く、斬/弾に強い防具にする
+	warmthの値が低い
+    encumbranceの値が低い
+	breathabilityの値が高い
+    防衛者シリーズとの変換レシピは削除する
+  ・ヴァルキリーの兜
+    某ゲームの兜を参考に被覆個所を前頭部("head_forehead"), 頭頂部("head_crown"), 右耳("head_ear_r"), 左耳("head_ear_l")に変更
+    被覆個所を限定したので"coverage"を変更 40→100
+    "weight"を変更 "2175 g"→"1305 g"
+    "volume"を変更 "2750 ml"→"1550 ml"
+    "warmth"を変更 10→8
+    削除 flag:HELMET_COMPAT
+      この装備とは別にヘルメットを装備可能フラグ
+    追加 flag:ONLY_ONE
+      同じ装備は１つしか装備できないフラグ
+  ・ヴァルキリーの鎧
+    "weight"を変更 "10 kg"→"12 kg"
+    "volume"を変更 "30 L"→"15500 ml"
+    "warmth"を変更 20→5
+    追加 "longest_side" 60cm
+    追加 flag:ONLY_ONE
+      同じ装備は１つしか装備できないフラグ
+    追加 flag:BLOCK_WHILE_WORN
+      装備している時に防具が攻撃をブロックすることがあるフラグ
+  ・ヴァルキリーの籠手
+    "weight"を変更 "880 g"→"1050 g"
+    "volume"を変更 "1500 ml"→"1050 ml"
+    "warmth"を変更 20→5
+    "material"を変更 "iron"→"steel"
+    追加 flag:DURABLE_MELEE
+    追加 flag:OUTER
+  ・ヴァルキリーの靴
+    "weight"を変更 "880 g"→"1512 g"
+    "volume"を変更 "2250 ml"→"3250 ml"
+    "warmth"を変更 20→5
+    "material"を変更 "iron"→"steel"
+    "encumbrance"を変更 28→10
