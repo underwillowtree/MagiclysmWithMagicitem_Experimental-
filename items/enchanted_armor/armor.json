@@ -736,8 +736,8 @@
           { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
         ],
         "coverage": 100,
-        "encumbrance": 10,
-		"breathability": "GOOD"
+        "breathability": "GOOD",
+        "encumbrance": 10
       }
     ],
     "techniques": [ "WBLOCK_1" ],
@@ -807,7 +807,7 @@
           { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
         ],
         "coverage": 100,
-		"breathability": "GOOD",
+        "breathability": "GOOD",
         "encumbrance": 15
       },
       {
@@ -818,7 +818,7 @@
           { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
         ],
         "coverage": 100,
-		"breathability": "GOOD",
+        "breathability": "GOOD",
         "encumbrance": 10
       },
       {
@@ -829,7 +829,7 @@
           { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
         ],
         "coverage": 100,
-		"breathability": "GOOD",
+        "breathability": "GOOD",
         "encumbrance": 10
       }
     ],
@@ -897,7 +897,7 @@
           { "type": "parabolan_wool", "covered_by_mat": 100, "thickness": 1.0 }
         ],
         "coverage": 100,
-		"breathability": "GOOD",
+        "breathability": "GOOD",
         "encumbrance": 10
       }
     ],
